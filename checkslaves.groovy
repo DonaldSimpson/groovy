@@ -1,4 +1,4 @@
-// Simplisitc groovy script to check the sattus of Jenkins Slaves
+// Simplisitc groovy script to check the status of Jenkins Slaves
 // Intended to be run in the Jenkins Script Console
 int exitcode = 0
 for (slave in hudson.model.Hudson.instance.slaves) {
