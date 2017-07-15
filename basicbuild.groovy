@@ -4,6 +4,7 @@ node('localhost'){
         writeFile file: "keepthisfile.txt", text: "Some useful info"
         writeFile file: "ignorethisfile", text: "rubbish"
         sh "docker ps"
+        sh "df -h"
     }
     
     stage ("Archive files"){
